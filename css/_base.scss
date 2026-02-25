@@ -1,0 +1,134 @@
+
+
+/* ========= VARIABLES ========= */
+
+$font-main:"Lexend", Arial, Helvetica, sans-serif;
+
+$color-text:#999;
+$color-dark:#333;
+$white:#ffffff;
+
+$primary:rgb(164,14,14);
+$primary-dark:#400404;
+
+$danger:rgb(185,6,6);
+$blue:rgb(24,14,210);
+
+$bp-tablet:820px;
+$bp-mobile:480px;
+
+$cart-desktop:670px;
+$cart-tablet:400px;
+
+
+
+/* ========= MIXINS ========= */
+
+
+/* FLEX reusable */
+
+@mixin flex(
+ $direction:row,
+ $align:center,
+ $justify:flex-start,
+ $gap:null
+){
+
+ display:flex;
+ flex-direction:$direction;
+
+ align-items:$align;
+
+ justify-content:$justify;
+
+ @if $gap{
+
+  gap:$gap;
+
+ }
+
+}
+
+
+/* BUTTON BASE */
+
+@mixin btn($bg){
+
+ background-color:$bg;
+
+ padding:6px;
+
+ margin-left:15px;
+ margin-right:15px;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@mixin tablet{
+
+ @media(max-width:$bp-tablet){
+
+  @content;
+
+ }
+
+}
+
+@mixin mobile{
+
+ @media(max-width:$bp-mobile){
+
+  @content;
+
+ }
+
+}
+
+
+
+/* ========= EXTENDS ========= */
+
+
+/* flex centrado */
+
+%flex-center{
+
+ display:flex;
+
+ align-items:center;
+
+ justify-content:center;
+
+}
+
+
+/* fila cart items */
+
+%cart-row{
+
+ display:flex;
+
+ flex-direction:row;
+
+ align-items:center;
+
+ gap:18px;
+
+}
+
+
+/* botones carrito */
+
+%cart-btn{
+
+ width:100%;
+
+ padding:6px;
+
+ margin-left:15px;
+
+ margin-right:15px;
+
+}

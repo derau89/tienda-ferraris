@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/functions.js" defer></script>
+    <title>JS DOM</title>
+</head>
+<body>
+   <header>
+        <i><img src="hamburger.png" alt="C:\Users\rdrr8\Documents\modulo js dom\hamburger.png"></i>
+        <img src="https://1000marcas.net/wp-content/uploads/2019/12/Ferrari-Logo-500x281.png" width="300" alt="logo Ferrari" class="logo">
+        <i>
+            <img src="shopping-cart_8771611.png" width="100" alt="Icono de carrito">
+            <span id="cart-count" class="cart-count">0</span>
+        </i>
+   </header> 
+
+   <main>
+        <section class="banner">
+            <h2 id="txt">Carros en venta</h2>
+            <p>Conoce nuestros servicios</p>
+        </section>
+
+        <section  class="products" >
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_747612-MLM81516573779_122024-F.webp" alt="Ferrari 488 GTB">
+                <h3>Ferrari 488 GTB</h3>
+                <p>$7,600,000</p>
+                <button class="add" data-id="1" data-name="Ferrari 488 GTB" data-price="7600000"><p>Añadir al carrito</p></button>
+            </article> 
+            
+           <article class="mouse">
+                <img src="/img/hgul4RD3-scaled.jpeg" alt="Ferrari f12 berlinetta">
+                <h3>Ferrari f12 berlinetta</h3>
+                <p>$6,500,000</p>
+                <button class="add" data-id="2" data-name="Ferrari f12 berlinetta" data-price="6500000"><p>Añadir al carrito</p></button>
+            </article> 
+
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_840131-MLM80997398951_112024-F.webp" alt="Ferrari 296 Gts">
+                <h3>Ferrari 296 Gts</h3>
+                <p>$13,500,000</p>
+                <button class="add" data-id="3" data-name="Ferrari 296 Gts" data-price="13500000"><p>Añadir al carrito</p></button>
+            </article>
+
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_747612-MLM81516573779_122024-F.webp" alt="Ferrari 488 GTB">
+                <h3>Ferrari 488 GTB</h3>
+                <p>$7,600,000</p>
+                <button class="add" data-id="4" data-name="Ferrari 488 GTB" data-price="7600000"><p>Añadir al carrito</p></button>
+            </article> 
+            
+            <article class="mouse">
+                <img src="/img/hgul4RD3-scaled.jpeg" alt="Ferrari f12 berlinetta">
+                <h3>Ferrari f12 berlinetta</h3>
+                <p>$6,500,000</p>
+                <button class="add" data-id="5" data-name="Ferrari f12 berlinetta" data-price="6500000"><p>Añadir al carrito</p></button>
+            </article> 
+
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_840131-MLM80997398951_112024-F.webp" alt="Ferrari 296 Gts">
+                <h3>Ferrari 296 Gts</h3>
+                <p>$13,500,000</p>
+                <button class="add" data-id="6" data-name="Ferrari 296 Gts" data-price="13500000"><p>Añadir al carrito</p></button>
+            </article>
+
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_747612-MLM81516573779_122024-F.webp" alt="Ferrari 488 GTB">
+                <h3>Ferrari 488 GTB</h3>
+                <p>$7,600,000</p>
+                <button class="add" data-id="7" data-name="Ferrari 488 GTB" data-price="7600000"><p>Añadir al carrito</p></button>
+            </article> 
+            
+             <article class="mouse">
+                <img src="/img/hgul4RD3-scaled.jpeg" alt="Ferrari f12 berlinetta">
+                <h3>Ferrari f12 berlinetta</h3>
+                <p>$6,500,000</p>
+                <button class="add" data-id="8" data-name="Ferrari f12 berlinetta" data-price="6500000"><p>Añadir al carrito</p></button>
+            </article> 
+
+            <article class="mouse">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_840131-MLM80997398951_112024-F.webp" alt="Ferrari 296 Gts">
+                <h3>Ferrari 296 Gts</h3>
+                <p>$13,500,000</p>
+                <button class="add" data-id="9" data-name="Ferrari 296 Gts" data-price="13500000"><p>Añadir al carrito</p></button>
+            </article>
+        </section>
+
+        <section class="cart">
+            <div class="cart__header">
+                <h2 class="cart__title">Carrito</h2>
+                <button class="cart-x">X</button>
+            </div>
+                
+           <div class="cart-items"></div>
+           <button class="cart__empty" id="clear-cart">Vaciar carrito</button>
+           <button class="cart__checkout">comprar</button>
+        </section>
+   </main>
+
+   
+  
+
+</body>
+</html>
